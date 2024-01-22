@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            span{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="name" placeholder="Inserisci il tuo nome"> 
+            <br>
+            <span id="requiredMsg">campo obbligatorio</span>
+            
+        </form>
+        <button onclick="checkForm();">Invia</button>
+
+        <script>
+            function checkForm(){
+                let name = document.getElementById("name").value
+                if(name == ""){
+                    document.getElementById("requiredMsg").style.color = "red"
+                    document.getElementById("requiredMsg").style.display = "block"
+                } else{
+              
+                }
+
+            }
+        </script>
+    </body>
+</html>

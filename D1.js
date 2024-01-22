@@ -80,13 +80,23 @@ console.log("jhon e Jhon, senza considerare le maiuscole, sono uguali: " + equal
 
 
 // EXTRA
-let farina = 300 ;
+/*let farina = getElementById("farina_totale").value ;
 let lievito = farina / 50 ;
 let acqua = farina / 2 ; 
 
 document.getElementById("farina").innerHTML = farina + "gr   ";
 document.getElementById("acqua").innerHTML = acqua + "gr   ";
-document.getElementById("lievito").innerHTML = lievito + "gr   ";
+document.getElementById("lievito").innerHTML = lievito + "gr   ";*/
+
+function getValueInput(){
+  let farina = document.getElementById("farina_totale").value ;
+  let lievito = farina / 50 ;
+  let acqua = farina / 2 ; 
+document.getElementById("farina").innerHTML = farina + " gr   di ";
+document.getElementById("acqua").innerHTML = acqua + " gr   di ";
+document.getElementById("lievito").innerHTML = lievito + " gr   di ";
+}
+
 
 
 //lo metto alla fine così non blocca cose importanti
