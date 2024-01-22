@@ -77,7 +77,25 @@ name2 = name2.toLowerCase();
 let equal = name1 === name2;
 console.log("jhon e Jhon, senza considerare le maiuscole, sono uguali: " + equal)
 
+
+
+// EXTRA
+let farina = 300 ;
+let lievito = farina / 50 ;
+let acqua = farina / 2 ; 
+
+document.getElementById("farina").innerHTML = farina + "gr   ";
+document.getElementById("acqua").innerHTML = acqua + "gr   ";
+document.getElementById("lievito").innerHTML = lievito + "gr   ";
+
+
 //lo metto alla fine così non blocca cose importanti
 const PI = 3.14
 PI = 3
 console.log(err)
+
+
+
+
+
+
